@@ -22,7 +22,7 @@ $(document).ready(function() {
                     });
                     var $img = $("<img>").addClass("img-responsive center-block highlightable")
                         .attr({
-                            src: data.imageSource,
+                            src: dataObj.imageSource,
                             alt: "Image of the project"
                         });
                     $a.append($img);

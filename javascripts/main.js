@@ -85,7 +85,7 @@ $(document).ready(function() {
                     //Add to modalFade
                     $modalFade.append($modalDialog);
                     //Add to modal-holder div
-                    $("#modals-holder").append($modalFade);
+                    $("footer").after($modalFade);
 
                     // <!-- Modal -->
                     // <div class="modal fade" id="myModal{{@index}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

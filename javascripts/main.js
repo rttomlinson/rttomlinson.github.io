@@ -27,7 +27,7 @@ $(document).ready(function() {
                         });
                     $a.append($img);
                     $div.append($a);
-                    $containerForProjects.prepend($div);
+                    $containerForProjects.append($div);
                     //append to .container-for=-projects
 
                     //Need to add remaining data to modals
@@ -59,9 +59,33 @@ $(document).ready(function() {
                     var $span = $("<span>").attr({
                         "aria-hidden": "true"
                     });
-                    var $modalBody = $("<div>").addClass("modal-body").text(dataObj.description);
-                    var $modalFooter = $("<div>").addClass("modal-footer");
 
+                    var $modalBody = $("<div>").addClass("modal-body").text(dataObj.description);
+
+                    var $modalFooter = $("<div>").addClass("modal-footer");
+                    var $modalButtonWeb = $("<button>").addClass("btn btn-primary").attr({
+                        type: "button"
+                    }).text("See it live");
+                    var $modalButtonGit = $("<button>").addClass("btn btn-primary").attr({
+                        type: "button"
+                    }).text("See it on Github");
+                    var $modalButtonClose = $("<button>").addClass("btn btn-secondary").attr({
+                        type: "button"
+                    }).text("Close");
+                    $modalFooter.append($modalButtonWeb, $modalButtonGit, $modalButtonClose);
+                    // attach buttons to footer
+                    //add span to button
+                    $button.append($span);
+                    //add title to header then button
+                    $modalHeader.append($modalTitle, $button);
+                    //Add to modalContent -> modalHeader, modalBody, modalFooter
+                    $modalContent.append($modalHeader, $modalBody, $modalFooter);
+                    //Add content to dialog
+                    $modalDialog.append($modalContent);
+                    //Add to modalFade
+                    $modalFade.append($modalDialog);
+                    //Add to modal-holder div
+                    $("#modals-holder").append($modalFade);
 
                     // <!-- Modal -->
                     // <div class="modal fade" id="myModal{{@index}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

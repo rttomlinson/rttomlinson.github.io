@@ -63,12 +63,16 @@ $(document).ready(function() {
                     var $modalBody = $("<div>").addClass("modal-body").text(dataObj.description);
 
                     var $modalFooter = $("<div>").addClass("modal-footer");
-                    var $modalButtonWeb = $("<button>").addClass("btn btn-primary").attr({
+                    var $modalButtonWeb = $("<a>").attr({
+                        href: dataObj.url
+                    }).append($("<button>").addClass("btn btn-primary").attr({
                         type: "button"
-                    }).text("See it live");
-                    var $modalButtonGit = $("<button>").addClass("btn btn-primary").attr({
+                    }).text("See it live"));
+                    var $modalButtonGit = $("<a>").attr({
+                        href: dataObj.github
+                    }).append($("<button>").addClass("btn btn-primary").attr({
                         type: "button"
-                    }).text("See it on Github");
+                    }).text("See it on Github"));
                     var $modalButtonClose = $("<button>").addClass("btn btn-secondary").attr({
                         type: "button",
                         "data-dismiss": "modal"

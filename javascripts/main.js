@@ -70,7 +70,8 @@ $(document).ready(function() {
                         type: "button"
                     }).text("See it on Github");
                     var $modalButtonClose = $("<button>").addClass("btn btn-secondary").attr({
-                        type: "button"
+                        type: "button",
+                        "data-dismiss": "modal"
                     }).text("Close");
                     $modalFooter.append($modalButtonWeb, $modalButtonGit, $modalButtonClose);
                     // attach buttons to footer

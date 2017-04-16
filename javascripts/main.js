@@ -50,7 +50,17 @@ $(document).ready(function() {
                             id: "exampleModalLabel"
                         })
                         .text(dataObj.name);
-                    var $
+                    var $button = $("<button>").addClass("close")
+                        .attr({
+                            type: "button",
+                            "data-dismiss": "modal",
+                            "aria-label": "Close"
+                        });
+                    var $span = $("<span>").attr({
+                        "aria-hidden": "true"
+                    });
+                    var $modalBody = $("<div>").addClass("modal-body").text(dataObj.description);
+                    var $modalFooter = $("<div>").addClass("modal-footer");
 
 
                     // <!-- Modal -->

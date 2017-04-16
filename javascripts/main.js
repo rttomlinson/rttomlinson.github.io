@@ -31,7 +31,50 @@ $(document).ready(function() {
                     //append to .container-for=-projects
 
                     //Need to add remaining data to modals
+                    var $modalFade = $("<div>").addClass("modal fade")
+                        .attr({
+                            id: `#myModal${index}`,
+                            tabindex: "-1",
+                            role: "dialog",
+                            "aria-labelledby": "exampleModalLabel",
+                            "aria-hidden": "true"
+                        });
+                    var $modalDialog = $("<div>").addClass("modal-dialog")
+                        .attr({
+                            role: "document"
+                        });
+                    var $modalContent = $("<div>").addClass("modal-content");
+                    var $modalHeader = $("<div>").addClass("modal-header");
+                    var $modalTitle = $("<h5>").addClass("modal-title")
+                        .attr({
+                            id: "exampleModalLabel"
+                        })
+                        .text(dataObj.name);
+                    var $
 
+
+                    // <!-- Modal -->
+                    // <div class="modal fade" id="myModal{{@index}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    //   <div class="modal-dialog" role="document">
+                    //     <div class="modal-content">
+                    //       <div class="modal-header">
+                    //         <h5 class="modal-title" id="exampleModalLabel">{{project.name}}</h5>
+                    //         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    //             <span aria-hidden="true">&times;</span>
+                    //           </button>
+                    //       </div>
+                    //       <div class="modal-body">
+                    //         ...
+                    //       </div>
+                    //       <div class="modal-footer">
+                    //         <button type="button" class="btn btn-primary">See it live</button>
+                    //         <button type="button" class="btn btn-primary">See it on Github</button>
+                    //         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    //       </div>
+                    //     </div>
+                    //   </div>
+                    // </div>
+                    // <!-- End Modal------------------->
 
                 });
 

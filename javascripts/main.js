@@ -33,7 +33,7 @@ $(document).ready(function() {
                     //Need to add remaining data to modals
                     var $modalFade = $("<div>").addClass("modal fade")
                         .attr({
-                            id: `#myModal${index}`,
+                            id: `myModal${index}`,
                             tabindex: "-1",
                             role: "dialog",
                             "aria-labelledby": "exampleModalLabel",

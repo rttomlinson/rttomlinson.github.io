@@ -3,7 +3,7 @@
 $(document).ready(function() {
     console.log("nice");
     $.ajax({
-            url: "http://rttomlinson-public-projects.herokuapp.com/projects/?count=3",
+            url: "https://rttomlinson-public-projects.herokuapp.com/projects/?count=3",
             beforeSend: function(xhr) {
                 //xhr.overrideMimeType("text/plain; charset=x-user-defined");
             }

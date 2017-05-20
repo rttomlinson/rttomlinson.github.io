@@ -14,7 +14,7 @@ $(document).ready(function() {
                 let $containerForProjects = $(".container-for-projects");
                 data.forEach(function(dataObj, index) {
                     //make project holder element
-                    var $div = $("<div>").addClass("col-md-4 project-holder");
+                    var $div = $("<div>").addClass("project-holder");
                     var $a = $("<a>").attr({
                         type: "button",
                         "data-toggle": "modal",

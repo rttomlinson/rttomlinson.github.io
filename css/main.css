@@ -10,7 +10,7 @@ h6 {
 body {
   margin-top: 56px;
   color: #000;
-  background-color: #FFFFFA;
+  background-color: #FEFEFE;
 }
 
 img {
@@ -87,6 +87,9 @@ section:first-child {
 #project-section {
   text-align: center;
 }
+
+
+
 
 @media screen and (min-width: 990px) {
   #project-section {

@@ -87,12 +87,6 @@ footer {
   text-align: center;
 }
 
-@media screen and (min-width: 990px) {
-  #project-section {
-    text-align: left;
-  }
-}
-
 
 /* Color pallete from http://colorpalettes.net/color-palette-131/ 
 #fff8f0 (Lightest)

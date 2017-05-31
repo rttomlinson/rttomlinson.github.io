@@ -27,7 +27,7 @@ $(document).ready(function() {
                         });
                     $a.append($img);
                     $div.append($a);
-                    $containerForProjects.prepend($div);
+                    $containerForProjects.append($div);
                     //append to .container-for=-projects
 
                     //Need to add remaining data to modals
